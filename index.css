@@ -1,0 +1,115 @@
+html{
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+body{
+    height: 100%;
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1{
+    padding: 4%;
+    margin: 0;
+}
+
+.content-solicitud{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgba(218, 214, 214, 0.377);
+    border-radius: 10px;
+    gap: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+}
+
+.solicitud-form{
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.solicitud-form input{
+    width: 40%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #637473; 
+    border-radius: 30px; 
+    background-color: #f9f9f9;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.solicitud-form input:focus {
+    border-color: #b29984; 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: #fff; 
+}
+
+.solicitud-form input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.solicitud-botones{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: violet; */
+    gap: 20px;
+}
+
+.solicitud-botones button{
+    background: black;
+    border: none;
+    border-radius: 10px; 
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.solicitud-botones button:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    color: black;
+}
+
+.solicitud-botones button:active {
+    transform: translateY(0); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.solicitud-botones button:focus {
+    outline: 2px solid #b29984;
+}
+
+.content-resultado{
+    background-color: #808080;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+    padding: 2% 0%;
+}
+
+.fahrenheit{
+    display: none;
+}
+.kelvin{
+    display: none;
+}
